@@ -2,26 +2,112 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Strona internetowa stworzona w celach edukacyjnych.">
     <meta name="theme-color" content="#2b2b2b">
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" sizes="192x192" href="/computer_192.png">
-    <link rel="apple-touch-icon" href="/computer_192.png">
-    <link rel="icon" sizes="512x512" href="/computer_512.png">
-    <link rel="apple-touch-icon" href="/computer_512.png">
-    <link rel="icon" href="/favicon.png" type="image/png">
-    <link rel="icon" href="https://dawid-platek.github.io/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <title>Dawid Płatek</title>
+    <link rel="icon" sizes="192x192" href="img/computer_192.png">
+    <link rel="apple-touch-icon" href="img/computer_192.png">
+    <link rel="icon" sizes="512x512" href="img/computer_512.png">
+    <link rel="apple-touch-icon" href="img/computer_512.png">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- <link rel="icon" href="https://dawid-platek.github.io/favicon.png"> -->
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/225760719b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Moja pierwsza strona WWW</h1>
-    <br>
-    <h2> Po moim powrocie !!!</h2>
-    <br>
-    <p>I'm hosted with GitHub Pages.</p>
+
+    <nav>
+        <div class="wrapper">
+            <button class="burger-icon"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav-items">
+                <a href="#">Home</a>
+                <a href="#about-us">O nas</a>
+                <a href="#products">Produkty</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="header">
+        <div class="hero-bg"></div>
+        <div class="hero-text">
+            <h1>Create <span>design</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <!-- O nas -->
+        <section class="about-us wrapper" id="about-us">
+            <h2 class="section-title">O nas</h2>
+            <p class="about-us-info">Lorem</p>
+            <p class="about-us-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur maxime animi
+                odit consequuntur, voluptatum odio ipsum quae nemo harum ducimus!</p>
+        </section>
+
+        <!-- Produkty -->
+        <section class="products wrapper" id="products">
+            <h2 class="section-title">Produkty</h2>
+
+            <div class="products-box">
+                <div class="product first-product">
+                    <div class="hero-bg"></div>
+                    <div class="hero-text">
+                        <h3>Przyjazne dzieciom</h3>
+                    </div>
+                </div>
+
+                <div class="product second-product">
+                    <div class="hero-bg"></div>
+                    <div class="hero-text">
+                        <h3>Najnowsze technologie</h3>
+                    </div>
+                </div>
+
+                <div class="product third-product">
+                    <div class="hero-bg"></div>
+                    <div class="hero-text">
+                        <h3>User friendly</h3>
+                    </div>
+                </div>
+
+                <div class="product fourth-product">
+                    <div class="hero-bg"></div>
+                    <div class="hero-text">
+                        <h3>Kompatybilne z wieloma urządzeniami</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section class="contact wrapper" id="contact">
+            <h2 class="section-title">Kontakt</h2>
+            <p><i class="fas fa-phone">+48 000 000 000</i></p>
+            <p><i class="fas fa-at">mail@mail.pl</i></p>
+            <h3>Adres</h3>
+            <p>ul. Krótka</p>
+            <p>00-000 Warszawa</p>
+        </section>
+    </main>
+    <footer>
+<p>&copy; 2025 Creative Design</p>
+<p>I'm hosted with GitHub Pages</p>
+    </footer>
+
 </body>
 
 </html>
